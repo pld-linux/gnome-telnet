@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GTelnet
+Name[en_US.ISO8859-1]=GTelnet
+Comment=Beautiful GNOME telnet Client
+Comment[pl]=Klient telnetu, ssh i rlogin dla GNOME
+Comment[en_US.ISO8859-1]=Beautiful GNOME Telnet Client
+Exec=gnome-telnet
+Icon=gnome-telnet.png
+Terminal=false
+MultipleArgs=false
+Type=Application
