@@ -9,6 +9,7 @@ Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://www.cyest.org/downloads/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Patch0:		%{name}-pl_translation.patch
 URL:		http://www.cyest.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,9 +32,13 @@ dla ¶rodowiska GNOME.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+rm -f missing
+aclocal -I macros
 autoconf
+automake -a -c
 %configure
 %{__make}
 
