@@ -55,8 +55,6 @@ install share/*.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install share/*.jpg $RPM_BUILD_ROOT%{_pixmapsdir}/gtelnet
 install share/*.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf AUTHORS ChangeLog NEWS README
-
 %find_lang %{name}
 
 %clean
@@ -64,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc docs *.gz
+%doc docs AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/gnome-telnet
 %{_applnkdir}/Network/*.desktop
 %{_pixmapsdir}/*.png
