@@ -34,7 +34,7 @@ dla ¶rodowiska GNOME.
 
 %build
 rm -f missing
-aclocal -I macros
+%{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
 %configure
