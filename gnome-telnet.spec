@@ -17,7 +17,6 @@ Requires:	openssh-clients
 Requires:	telnet
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 %define		_mandif		%{_prefix}/man
 
 %description
