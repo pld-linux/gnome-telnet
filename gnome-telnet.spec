@@ -21,11 +21,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandif		%{_prefix}/man
 
 %description
-Gnome Telnet is a powerful frontend telnet client for GNOME. It not
+GNOME Telnet is a powerful frontend telnet client for GNOME. It not
 only has support for telnet, but for ssh and rlogin as well.
 
 %description -l pl
-Gnome Telnet jest potê¿n± nak³adk± na programy telnet, ssh oraz rlogin
+GNOME Telnet jest potê¿n± nak³adk± na programy telnet, ssh oraz rlogin
 dla ¶rodowiska GNOME.
 
 %prep
