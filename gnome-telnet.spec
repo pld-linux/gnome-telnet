@@ -36,7 +36,7 @@ dla ¶rodowiska GNOME.
 rm -f missing
 aclocal -I macros
 autoconf
-automake -a -c
+automake -a -c -f
 %configure
 %{__make}
 
