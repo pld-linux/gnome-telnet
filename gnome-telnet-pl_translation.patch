@@ -1,0 +1,410 @@
+--- ./po/pl.po.org	Sun Jan 13 04:03:09 2002
++++ ./po/pl.po	Sun Jan 13 05:20:05 2002
+@@ -0,0 +1,396 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR Free Software Foundation, Inc.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++msgid ""
++msgstr ""
++"Project-Id-Version: PACKAGE VERSION\n"
++"POT-Creation-Date: 2002-01-13 02:18+0100\n"
++"PO-Revision-Date: 2002-01-13 05:20CET\n"
++"Last-Translator: blues <blues@ds.pg.gda.pl>\n"
++"Language-Team: Polish <blues@ds.pg.gda.pl>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 0.9\n"
++
++#: src/interface.c:105
++msgid "8-bit data path (both output and input)"
++msgstr "8-bit data path (both output and input)"
++
++#: src/interface.c:106
++msgid "8-bit data path on output"
++msgstr "8-bit data path on output"
++
++#: src/interface.c:107
++msgid "Stop any character from being recognized as an escape character"
++msgstr "Nie rozpoznawaj jakiegokolwiek klawisza jako Escape"
++
++#: src/interface.c:108
++msgid ""
++"Forward a forwardable copy of the local credentials to the remote system (if "
++"Kerberos V5 is used)"
++msgstr ""
++"Forward a forwardable copy of the local credentials to the remote system (jeżeli "
++"Kerberos V5 jest używany)"
++
++#: src/interface.c:109
++msgid "Attempt automatic login"
++msgstr "Staraj się automatycznie logować"
++
++#: src/interface.c:110
++msgid "Specify a user interface similar to rlogin"
++msgstr "Interfejs użytkownika podobny do rlogin"
++
++#: src/interface.c:111
++msgid "Turn on encryption of the data stream"
++msgstr "Włącz szyfrowanie strumienia danych"
++
++#: src/interface.c:112
++msgid "Set the initial value of the debug flag to TRUE"
++msgstr "Ustaw domyślną wartość flagi debug na TRUE"
++
++#: src/interface.c:113 src/interface.c:145
++msgid "Set the initial telnet escape character to:"
++msgstr "Wstępnie ustaw telnetowy znak escape na:"
++
++#: src/interface.c:114
++msgid "Set the IP type-of-service  (TOS)  option  to the value:"
++msgstr "Ustaw wartość IP type-of-service  (TOS):"
++
++#: src/interface.c:115
++msgid "Disable the type of authentication: "
++msgstr "Wyłącz sposób autentyfikacji:"
++
++#: src/interface.c:116
++msgid "Request  Kerberos tickets for the remote host in the realm:"
++msgstr "Żądaj biletu Kerberos'a dla zdalnego hosta w realm:"
++
++#: src/interface.c:117
++msgid "Trace file :"
++msgstr "Plik śledzenia:"
++
++#: src/interface.c:121
++msgid "Redirect input from /dev/null"
++msgstr "Przekieruj wejście do /dev/null"
++
++#: src/interface.c:122
++msgid "Disable authentication agent forwarding"
++msgstr "Wyłącz przenoszenie agenta autentyfikacji"
++
++#: src/interface.c:123
++msgid "Disable X11 connection forwarding"
++msgstr "Wyłącz forwarding X11"
++
++#: src/interface.c:124
++msgid "Allocate a tty even if command is given"
++msgstr "Przydziel tty nawet, gdy jest wydana komenda"
++
++#: src/interface.c:125
++msgid "Display verbose debugging messages"
++msgstr "Wyświetl komunikaty w trybie \"gadatliwym\""
++
++#: src/interface.c:126
++msgid "Don't allocate a privileged port"
++msgstr "Nie przydzielaj uprzywilejowanych portów"
++
++#: src/interface.c:127
++msgid "Don't display any warning messages"
++msgstr "Nie wyświetlaj ostrzeżeń"
++
++#: src/interface.c:128
++msgid "Fork into background after authentication"
++msgstr "Przenoś w tło po zalogowaniu"
++
++#: src/interface.c:129
++msgid "Enable compression"
++msgstr "Włącz kompresję"
++
++#: src/interface.c:130
++msgid "Allow remote hosts to connect to local forwarded ports"
++msgstr "Zezwól zdalnemu hostowi na połączenia z lokalnymi forwardowanymi portami"
++
++#: src/interface.c:131
++msgid "Don't request a session"
++msgstr "Nie żądaj sesji"
++
++#: src/interface.c:132
++msgid "Set SSH2 debug level to:"
++msgstr "Ustaw poziom odpluskwiania SSH2 na:"
++
++#: src/interface.c:133
++msgid "Identity file for public key authentication to:"
++msgstr "Plik identyfikatora do autentyfikacji po kluczach publicznych"
++
++#: src/interface.c:134
++msgid "Set escape character to:"
++msgstr "Ustaw symbol Escape na:"
++
++#: src/interface.c:135
++msgid ""
++"Select encryption algorithm (For OpenSSH: only '3des' and 'blowfish' are "
++"supported)"
++msgstr "Ustaw algorytm szyfrowania (dla OpenSSH: tylko '3des' oraz 'blowfish' są wspierane)"
++
++#: src/interface.c:139
++msgid "Allows an eight-bit input data path at all times"
++msgstr "Allows an eight-bit input data path at all times"
++
++#: src/interface.c:140
++msgid "Stops any character from being recognized as an escape character"
++msgstr "Przestań rozpoznawać jakikolwiek klawisz jako Escape"
++
++#: src/interface.c:141
++msgid "Turns off all Kerberos authentication"
++msgstr "Wyłącz autentyfikację Kerberos"
++
++#: src/interface.c:142
++msgid "Allows the rlogin session to be run in \"litout\" mode"
++msgstr "Pozwól na wystartowanie sesji rlogin w trybie \"litout\""
++
++#: src/interface.c:143
++msgid "Turns on socket debugging"
++msgstr "Włącz odpluskwianie socketów"
++
++#: src/interface.c:144
++msgid "Turns on DES encryption for all data passed via the rlogin session"
++msgstr "Włącz szyfrowanie DES wszystkich danych podczas sesji rlogin"
++
++#: src/interface.c:146
++msgid "Request Kerberos tickets for the remote host in the realm:"
++msgstr "Żądaj biletu Kerberos'a dla zdalnego hosta w realm:"
++
++#: src/interface.c:150
++msgid "Background Color"
++msgstr "Kolor tła"
++
++#: src/interface.c:151
++msgid "Foreground Color"
++msgstr "Kolor czcionki"
++
++#: src/interface.c:152
++msgid "Executable Files Color"
++msgstr "Kolor plików wykonywalnych"
++
++#: src/interface.c:153
++msgid "Directories Color"
++msgstr "Kolor katalogów"
++
++#: src/interface.c:154
++msgid "Display Font"
++msgstr "Wyświetlany font"
++
++#: src/interface.c:155
++msgid "Background Image"
++msgstr "Obraz w tle"
++
++#: src/interface.c:288
++msgid "GTelnet"
++msgstr "GTelnet"
++
++#: src/interface.c:318
++msgid "Select one of the options"
++msgstr "Wybierz jedną z opcji"
++
++#: src/interface.c:337
++msgid " Host name "
++msgstr " Nazwa hosta "
++
++#: src/interface.c:367
++msgid " Port "
++msgstr " Port "
++
++#: src/interface.c:374
++msgid "port number -- leave blank for default"
++msgstr "numer portu -- domyślnie puste dla standardowych ustawień"
++
++#: src/interface.c:379
++msgid "Connect"
++msgstr "Połącz"
++
++#: src/interface.c:379
++msgid "Connect to the remote host"
++msgstr "Połącz ze zdalnym hostem"
++
++#: src/interface.c:381
++msgid "Disconnect"
++msgstr "Rozłącz"
++
++#: src/interface.c:381
++msgid "Disconnect from the remote host"
++msgstr "Rozłącz sesję ze zdalnym hostem"
++
++#: src/interface.c:383 src/interface.c:729
++msgid "Preferences"
++msgstr "Ustawienia"
++
++#: src/interface.c:383
++msgid "Change your settings"
++msgstr "Zmień ustawienia"
++
++#: src/interface.c:385
++msgid "Help"
++msgstr "Pomoc"
++
++#: src/interface.c:385 src/interface.c:570
++msgid "Documentation"
++msgstr "Dokumentacja"
++
++#: src/interface.c:461
++msgid "Information"
++msgstr "Informacja"
++
++#: src/interface.c:526
++msgid "About GTelnet"
++msgstr "O GTelnet"
++
++#: src/interface.c:545
++msgid "Click here for a complete documentation"
++msgstr "Kliknij, aby zobaczyć pełną dokumentację"
++
++#: src/interface.c:568
++msgid ""
++"GTelnet is a frontend for the following programs:\n"
++"\n"
++"- Telnet:  to communicate with another host using the TELNET protocol. \n"
++"\n"
++"- SSH:  ssh (Secure Shell) is a program for logging into a remote machine "
++"and for executing commands on a remote machine.  It is intended to replace "
++"rlogin and rsh, and provide secure encrypted communications between two "
++"untrusted hosts over an insecure network.  X11 connections and arbitrary TCP/"
++"IP ports can also be forwarded over the secure channel. (Copied from SSH "
++"manual)\n"
++"\n"
++"- RLogin: rlogin is a program that is a little bit similar to telnet. It is "
++"intended to make remote administration over local area network easier, but "
++"it can be very insecure. It is recommended that you use SSH instead of "
++"rlogin."
++msgstr ""
++"GTelnet jest frontendem dla następujących programów:\n"
++"\n"
++"- Telnet:  do komunikacji przy użyciu protokołu TELNET.\n"
++"\n"
++"- SSH: ssh (Secure Shell) jest programem do logowania na zdalne maszyny "
++"oraz do wykonywania na nich poleceń.  Jest zastępstwem dla rlogin oraz rsh; "
++"dostarcza bezpiecznego szyfrowanego połączenia pomiędzy dwoma hostami "
++"poprzez niezaufaną sieć.  Połączenia X11 oraz wyznaczone porty TCP/IP "
++"także mogą być przenoszone poprzez bezpieczny kanał (Skopiowane z "
++"manuala SSH)\n"
++"\n"
++"- RLogin:  rlogin jest programem trochę podobnym do telnetu. Jest stworzony, "
++"aby uczynić administrację w sieci lokalnej łatwiejszą, ale może być bardzo "
++"niebezpieczne. Zaleca się użycie SSH zamiast rlogin."
++
++#: src/interface.c:588
++msgid "Copyright (C) 2000 the Free Software Foundation"
++msgstr "Copyright (C) 2000 the Free Software Foundation"
++
++#: src/interface.c:590
++msgid "GTelnet is a frontend to the ole good telnet, ssh, and rlogin"
++msgstr "GTelnet jest graficznym frontendem dla telnet'u, ssh oraz rlogin"
++
++#: src/interface.c:592
++msgid "Authors: "
++msgstr "Autorzy:"
++
++#: src/interface.c:627
++msgid "Authors"
++msgstr "Autorzy"
++
++#: src/interface.c:663
++msgid ""
++"Today, there's a lot of poor children out there who need your help.\n"
++"\n"
++"For a dollar a day, you can help change a child's life forever. With your "
++"sponsorship, you will help provide basic needs like clean water, schools, "
++"clinics and agricultural training that will lift your sponsored child, his/"
++"her family, and community - out of poverty.\n"
++"\n"
++"If you have the resources available and if you're willing to help those who "
++"are less fortunate, please sponsor a child."
++msgstr ""
++"Today, there's a lot of poor children out there who need your help.\n"
++"\n"
++"For a dollar a day, you can help change a child's life forever. With your "
++"sponsorship, you will help provide basic needs like clean water, schools, "
++"clinics and agricultural training that will lift your sponsored child, his/"
++"her family, and community - out of poverty.\n"
++"\n"
++"If you have the resources available and if you're willing to help those who "
++"are less fortunate, please sponsor a child."
++
++#: src/interface.c:665
++msgid "For more information, please visit:"
++msgstr "Aby uzyskać więcej informacji, odwiedź stronę:"
++
++#: src/interface.c:669
++msgid "http://www.WorldVision.com"
++msgstr "http://www.WorldVision.com"
++
++#: src/interface.c:678
++msgid "Please Help Needy Children"
++msgstr "Potrzebna Pomoc dla Dzieci"
++
++#: src/interface.c:794
++msgid "Trace file"
++msgstr "Plik śledzenia"
++
++#: src/interface.c:812
++msgid "Telnet Options"
++msgstr "Opcje Telnet"
++
++#: src/interface.c:888
++msgid "SSH Options"
++msgstr "Opcje SSH"
++
++#: src/interface.c:937
++msgid "RLogin Options"
++msgstr "Opcje RLogin"
++
++#: src/interface.c:958
++msgid "Terminal type:"
++msgstr "Typ Terminala"
++
++#. ////////////////////////////////////////////////////////////////////////////////////////
++#: src/interface.c:1057
++msgid "Display Settings"
++msgstr "Opcje wyświetlania"
++
++#: src/interface.c:1108
++msgid "SSH Login"
++msgstr "Logowanie SSH"
++
++#: src/interface.c:1126
++msgid "Username:"
++msgstr "Nazwa użytkownika:"
++
++#: src/interface.c:1165
++msgid ""
++"If you don't want to see this login box, type user@hostname.com in the host "
++"name entry, and to restore the previous settings you can click the pulldown "
++"button next to it to retrieve the history. Now please type your user name/"
++"login below!"
++msgstr ""
++"Jeżeli nie chcesz widzieć tego okienka, wpisz login@host w Nazwie hosta. "
++"Aby przywrócić te ustawienia wystarczy później wybrać z rozwijanego menu "
++"odpowiednią pozycję historii.\n"
++"Teraz proszę wpisać poniżej nazwę użytkownika (login)."
++
++#: src/interface.c:1438
++msgid "Please fill in the host name :-)"
++msgstr "Proszę wypełnić nazwę hosta :-)"
++
++#: src/interface.c:1511 src/interface.c:1522
++msgid "Not connected"
++msgstr "Nie połączony"
++
++#: src/support.c:100 src/support.c:138
++#, c-format
++msgid "Couldn't find pixmap file: %s"
++msgstr "Nie można znaleźć rysunku: %s"
++
++#: src/support.c:116
++#, c-format
++msgid "Couldn't create pixmap from file: %s"
++msgstr "Nie można stworzyć rysunku z pliku: %s"
++
+--- ./configure.in.org	Tue Dec  5 01:44:32 2000
++++ ./configure.in	Sun Jan 13 04:02:29 2002
+@@ -17,7 +17,7 @@
+ GNOME_X_CHECKS
+ 
+ dnl Add the languages which your application supports here.
+-ALL_LINGUAS="de ja sl"
++ALL_LINGUAS="de ja sl pl"
+ AM_GNU_GETTEXT
+ 
+ dnl Set PACKAGE_LOCALE_DIR in config.h.
