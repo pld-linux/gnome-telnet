@@ -8,13 +8,14 @@ Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://www.cyest.org/downloads/%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
 URL:		http://www.cyest.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
+Requires:	openssh-clients
 Requires:	telnet
-Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -32,7 +33,8 @@ dla ¶rodowiska GNOME.
 %setup -q
 
 %build
-%configure2_13
+autoconf
+%configure
 %{__make}
 
 %install
@@ -45,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Network
 install -d $RPM_BUILD_ROOT%{_pixmapsdir}/gtelnet
 
-install share/GTelnet.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network
 install share/*.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install share/*.jpg $RPM_BUILD_ROOT%{_pixmapsdir}/gtelnet
 install share/*.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
