@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.cyest.org/downloads/%{name}-%{version}.tar.gz
+# Source0-md5:	bb5580a076b22b47097b60e2ec361325
 Source1:	%{name}.desktop
 Patch0:		%{name}-pl_translation.patch
 URL:		http://www.cyest.org/
