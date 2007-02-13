@@ -1,5 +1,5 @@
 Summary:	GNOME Telnet is a 3-in-1 GNOME shell for Telnet, SSH, and RLogin
-Summary(pl.UTF-8):   GNOME Telnet jest nakładką dla GNOME do programów Telnet, SSH oraz RLogin
+Summary(pl.UTF-8):	GNOME Telnet jest nakładką dla GNOME do programów Telnet, SSH oraz RLogin
 Name:		gnome-telnet
 Version:	2.4
 Release:	1
