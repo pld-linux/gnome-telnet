@@ -12,7 +12,7 @@ Patch0:		%{name}-pl_translation.patch
 URL:		http://www.cyest.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 Requires:	openssh-clients
 Requires:	telnet
